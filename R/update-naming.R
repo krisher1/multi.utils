@@ -1,8 +1,9 @@
-fct_reorg <- function(fac, ...) {
-  fct_recode(fct_relevel(fac, ...), ...)
-}
-
 update_naming <- function(df) {
+
+  fct_reorg <- function(fac, ...) {
+    fct_recode(fct_relevel(fac, ...), ...)
+  }
+
   df %>%
     mutate(
       age_group = fct_reorg(age_group,
@@ -16,7 +17,7 @@ update_naming <- function(df) {
                             "Cohabiting partner" = "sexcohab",
                             "Nonregular partners(s) +" = "sexnonregplus",
                             "Nonregular partner(s)" = "sexnonreg",
-                            "YWKP" = "sexpaid12m"
+                            "FSW" = "sexpaid12m"
       ),
       iso3 = fct_reorg(iso3,
                        "Botswana" = "BWA",
