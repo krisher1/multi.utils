@@ -5,7 +5,7 @@ priority_iso3 <- function() {
 analysis_level <- function() {
   c(
     "BWA" = 2, "CMR" = 2, "KEN" = 2,
-    "LSO" = 1, "MOZ" = 2, "MWI" = 5,
+    "LSO" = 1, "MOZ" = 3, "MWI" = 5,
     "NAM" = 2, "SWZ" = 1, "TZA" = 3,
     "UGA" = 3, "ZAF" = 2, "ZMB" = 2,
     "ZWE" = 2
