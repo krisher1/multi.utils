@@ -6,7 +6,7 @@ analysis_level <- function() {
   c(
     "BWA" = 3, "CMR" = 2, "KEN" = 2,
     "LSO" = 1, "MOZ" = 3, "MWI" = 5,
-    "NAM" = 2, "SWZ" = 1, "TZA" = 3,
+    "NAM" = 2, "SWZ" = 1, "TZA" = 4,
     "UGA" = 3, "ZAF" = 2, "ZMB" = 2,
     "ZWE" = 2
   )
