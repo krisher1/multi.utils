@@ -15,8 +15,8 @@ update_naming <- function(df) {
       indicator = fct_reorg(indicator,
                             "No sex" = "nosex12m",
                             "Cohabiting partner" = "sexcohab",
-                            "Nonregular partners(s) +" = "sexnonregplus",
-                            "Nonregular partner(s)" = "sexnonreg",
+                            "Non-regular or multiple partners(s) +" = "sexnonregplus",
+                            "Non-regular or multiple partner(s)" = "sexnonreg",
                             "FSW" = "sexpaid12m"
       ),
       iso3 = fct_reorg(iso3,
