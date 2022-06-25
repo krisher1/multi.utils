@@ -13,8 +13,8 @@ update_naming <- function(df) {
                             "15-24" = "Y015_024"
       ),
       indicator = fct_reorg(indicator,
-                            "No sex" = "nosex12m",
-                            "Cohabiting partner" = "sexcohab",
+                            "Not sexually active" = "nosex12m",
+                            "One cohabiting partner" = "sexcohab",
                             "Non-regular or multiple partners(s) +" = "sexnonregplus",
                             "Non-regular or multiple partner(s)" = "sexnonreg",
                             "FSW" = "sexpaid12m"
