@@ -2,8 +2,7 @@
 % Please edit documentation in R/ecdf.R
 \name{get_lims}
 \alias{get_lims}
-\title{This function simulates upper and lower limits `lims$lower` and `lims$upper` such that:
-\deqn{P({lims$lower[i] <= sum(unif(n) < 1/i) <= lims$upper[i]} for any i = 1, \ldots, K - 1) = 1 - alpha}}
+\title{Upper and lower limits for goodness of fit.}
 \source{
 https://github.com/TeemuSailynoja/simultaneous-confidence-bands
 }
@@ -22,6 +21,8 @@ List containing the upper and lower simultaneous confidence bands
 evaluated at \eqn{z_i = i / K} for \eqn{i = 1, \ldots, K - 1}.
 }
 \description{
+This function simulates upper and lower limits `lims$lower` and `lims$upper` such that:
+\deqn{P({lims$lower[i] <= sum(unif(n) < 1/i) <= lims$upper[i]} for any i = 1, \ldots, K - 1) = 1 - alpha}
 For more information see "Graphical Test for Discrete Uniformity and its Applications in
 Goodness of Fit Evaluation and Multiple Sample Comparison" (Säilynoja, Bürkner, Vehtari).
 }

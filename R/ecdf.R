@@ -5,9 +5,10 @@ empirical_coverage <- function(x, nominal_coverage) {
   sum(y) / length(y)
 }
 
+#' Upper and lower limits for goodness of fit.
+#'
 #' This function simulates upper and lower limits `lims$lower` and `lims$upper` such that:
 #' \deqn{P({lims$lower[i] <= sum(unif(n) < 1/i) <= lims$upper[i]} for any i = 1, \ldots, K - 1) = 1 - alpha}
-#'
 #' For more information see "Graphical Test for Discrete Uniformity and its Applications in
 #' Goodness of Fit Evaluation and Multiple Sample Comparison" (Säilynoja, Bürkner, Vehtari).
 #'
