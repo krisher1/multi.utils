@@ -1,5 +1,6 @@
 priority_iso3 <- function() {
-  c("BWA", "CMR", "KEN", "LSO", "MOZ", "MWI", "NAM", "SWZ", "TZA", "UGA", "ZAF", "ZMB", "ZWE",
+  c("BWA", "CMR", "KEN", "LSO", #"MOZ",
+    "MWI", "NAM", "SWZ", "TZA", "UGA", "ZAF", "ZMB", "ZWE",
     "AGO", "BDI", "COD", "GAB", "RWA", "ETH", "HTI", "TCD", "CIV", "GHA", "GIN", "LBR", "MLI",
     "NER", "SLE", "TGO", "BFA")
 }
