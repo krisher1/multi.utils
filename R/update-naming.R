@@ -6,20 +6,26 @@ update_naming <- function(df) {
 
   df %>%
     mutate(
-      age_group = fct_reorg(age_group,
+      age_group = fct_recode(age_group,
                             "15-19" = "Y015_019",
                             "20-24" = "Y020_024",
                             "25-29" = "Y025_029",
-                            "15-24" = "Y015_024"
+                            "15-24" = "Y015_024",
+                            "30-34" = "Y030_034",
+                            "35-39" = "Y035_039",
+                            "40-44" = "Y040_044",
+                            "45-49" = "Y045_049",
+                            "15-49" = "Y015_049",
+                            "25-49" = "Y025_049"
       ),
-      indicator = fct_reorg(indicator,
+      indicator = fct_recode(indicator,
                             "Not sexually active" = "nosex12m",
                             "One cohabiting partner" = "sexcohab",
                             "Non-regular or multiple partners(s) +" = "sexnonregplus",
                             "Non-regular or multiple partner(s)" = "sexnonreg",
                             "FSW" = "sexpaid12m"
       ),
-      iso3 = fct_reorg(iso3,
+      iso3 = fct_recode(iso3,
                        "Botswana" = "BWA",
                        "Cameroon" = "CMR",
                        "Kenya" = "KEN",
@@ -32,7 +38,25 @@ update_naming <- function(df) {
                        "Uganda" = "UGA",
                        "South Africa" = "ZAF",
                        "Zambia" = "ZMB",
-                       "Zimbabwe" = "ZWE"
+                       "Zimbabwe" = "ZWE",
+                       "Angola" = "AGO",
+                       "Burundi" = "BDI",
+                       "DRC" = "COD",
+                       "Gabon" = "GAB",
+                       "Rwanda" = "RWA",
+                       "Ethiopia" = "ETH",
+                       "Haiti" = "HTI",
+                       "Chad" = "TCD",
+                       "Cote D'Ivoire" = "CIV",
+                       "Ghana" = "GHA",
+                       "Guinea" = "GIN",
+                       "Liberia" = "LBR",
+                       "Mali" = "MLI",
+                       "Niger" = "NER",
+                       "Sierra Leone" = "SLE",
+                       "Togo" = "TGO",
+                       "Burkina Faso" = "BFA",
+                       "Congo" = "COG"
       )
     )
 }
