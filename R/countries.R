@@ -1,12 +1,12 @@
 priority_iso3 <- function() {
   c("BWA",
-    "MWI", "ZAF", "ZMB", "ZWE")
+    "MWI", "ZAF", "ZWE")
 }
 
 analysis_level <- function() {
   c(
     "BWA" = 3,  "MWI" = 5,
-    "ZAF" = 2, "ZMB" = 2,
+    "ZAF" = 2,
     "ZWE" = 2
   )
 }
@@ -14,7 +14,7 @@ analysis_level <- function() {
 admin1_level <- function() {
   c(
     "BWA" = 1, "MWI" = 1,
-    "ZAF" = 1, "ZMB" = 1,
+    "ZAF" = 1,
     "ZWE" = 1
   )
 }
